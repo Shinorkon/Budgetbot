@@ -1,0 +1,9 @@
+# Environment variables (contains secrets!)
+.env
+
+# Compiled binary
+budgetbot
+
+# OS files
+.DS_Store
+Thumbs.db

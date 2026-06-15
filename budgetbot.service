@@ -1,0 +1,16 @@
+[Unit]
+Description=Telegram Budget Bot
+After=network.target
+Wants=network-online.target
+
+[Service]
+User=falulaan
+Group=falulaan
+WorkingDirectory=/home/falulaan/Dev/Budgetbot
+EnvironmentFile=/home/falulaan/Dev/Budgetbot/.env
+ExecStart=/home/falulaan/Dev/Budgetbot/budgetbot
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
